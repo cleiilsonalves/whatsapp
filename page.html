@@ -1,0 +1,26 @@
+
+<video autoplay="#" controls="30"></video>
+<audio autoplay="#" controls="30"></audio>
+<form>
+	Nome: <input type="text" size="30" name="nome"><br>
+	Endereço: <input type="text" size="25" name="endereco"> N° <input type="text" size="6" name="numero"><br>
+	Cep: <input type="text" size="10" name="cep" placeholder="00000-000" maxlength="9"><br>
+	Data Nacimento: <input type="date" name="dataNasc" ><br>
+	<hr>
+	<input type="submit" value="Enviar">
+
+
+
+</form>
+
+<?php
+if(isset($_GET)){
+
+foreach ($_GET as $key => $value) {
+	echo "nome do campo: ".$key."<br>";
+	echo "valor do campo: ".$value."<br><br>";
+}
+
+}
+
+?>
